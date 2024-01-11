@@ -6,7 +6,7 @@ public class DisappearingPanel extends Panel {
 
 
     public void display() {
-        if (clicked == true){
+        if (clicked){
             super.display();
         }
     }
