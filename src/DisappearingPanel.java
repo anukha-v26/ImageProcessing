@@ -16,7 +16,7 @@ public class DisappearingPanel extends Panel {
         int y = getY();
         int h = getHeight();
         int w = getWidth();
-        if (mX > x && mX < x + w && mY > y - h && mY < y + h) {
+        if (mX > (x-w/2) && mX < (x + w/2) && mY > y - h/2 && mY < y + h/2) {
             clicked = !clicked;
         }
     }

@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1330ea7-8680-4d0c-8c5f-2e473964a7ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageProcessing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TintedPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/strawberry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ContrastingPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DisappearingPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Panel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RotatingPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TintedPanel.java" afterDir="false" />
+    <list default="true" id="a1330ea7-8680-4d0c-8c5f-2e473964a7ca" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +68,20 @@
       <option name="presentableId" value="Default" />
       <updated>1704906543685</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1705011672072</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705011672072</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
