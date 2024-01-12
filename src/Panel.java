@@ -1,7 +1,4 @@
 import processing.core.PImage;
-
-import static processing.awt.ShimAWT.loadImage;
-
     public class Panel {
         private PImage img;
         private int x, y;
@@ -44,4 +41,3 @@ import static processing.awt.ShimAWT.loadImage;
             return img.copy();
         }
     }
-

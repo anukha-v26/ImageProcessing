@@ -5,15 +5,13 @@ public class RotatingPanel extends Panel {
         super(_x, _y, _w, _h);
         degrees = 10;
     }
-
     public void display() {
-
         int x = getX();
         int y = getY();
         Main.app.push();
         Main.app.translate(x, y);
         Main.app.rotate(degrees);
-        if (rotate == true){
+        if (rotate){
             degrees -= 50;
         }
         setX(0);
@@ -23,7 +21,6 @@ public class RotatingPanel extends Panel {
         setY(y);
         Main.app.pop();
     }
-
     public void handleMouseClicked(int mX, int mY) {
         int x = getX();
         int y = getY();

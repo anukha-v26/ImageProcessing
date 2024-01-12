@@ -3,14 +3,11 @@ public class DisappearingPanel extends Panel {
     public DisappearingPanel(int _x, int _y, int _w, int _h) {
         super(_x, _y, _w, _h);
     }
-
-
     public void display() {
         if (clicked){
             super.display();
         }
     }
-
     public void handleMouseClicked(int mX, int mY) {
         int x = getX();
         int y = getY();

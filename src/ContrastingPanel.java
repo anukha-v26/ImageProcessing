@@ -1,6 +1,7 @@
 import processing.core.PImage;
 public class ContrastingPanel extends Panel {
-    public ContrastingPanel(int _x, int _y, int _w, int _h) {
+    public ContrastingPanel(int _x, int _y, int _w, int _h)
+    {
         super(_x, _y, _w, _h);
     }
     public void display() {

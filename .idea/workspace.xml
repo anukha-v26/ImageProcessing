@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1330ea7-8680-4d0c-8c5f-2e473964a7ca" name="Changes" comment="initial commit">
+    <list default="true" id="a1330ea7-8680-4d0c-8c5f-2e473964a7ca" name="Changes" comment=" commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContrastingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContrastingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DisappearingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisappearingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RotatingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RotatingPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,24 +81,36 @@
       <option name="project" value="LOCAL" />
       <updated>1705011672072</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" commit">
+      <option name="closed" value="true" />
+      <created>1705012573870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705012573870</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" commit">
+      <option name="closed" value="true" />
+      <created>1705012656773</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705012656773</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value=" commit" />
+    <option name="LAST_COMMIT_MESSAGE" value=" commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>31</line>
+          <line>18</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
