@@ -2,12 +2,13 @@ public class RotatingPanel extends Panel {
 
     //private variables
     private float degrees;
-    private boolean rotate = true;
+    private boolean rotate;
 
     //constructor for class RotatingPanel that uses Panel class' constructor and sets degrees to be 10 initially
     public RotatingPanel(int _x, int _y, int _w, int _h) {
         super(_x, _y, _w, _h);
         degrees = 10;
+        rotate = true;
     }
 
     //method to display the strawberry and rotate it by -50 degrees if rotate = true
