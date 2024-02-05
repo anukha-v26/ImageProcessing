@@ -1,8 +1,8 @@
 public class TintedPanel extends Panel {
 
     //constructor for class TintedPanel (using Panel class' constructor)
-    public TintedPanel(int _x, int _y, int _w, int _h) {
-        super(_x, _y, _w, _h);
+    public TintedPanel(int x, int y, int w, int h) {
+        super(x, y, w, h);
     }
 
     // overriding inherited display method and displaying a green tinted strawberry

@@ -5,8 +5,8 @@ public class RotatingPanel extends Panel {
     private boolean rotate;
 
     //constructor for class RotatingPanel that uses Panel class' constructor and sets degrees to be 10 initially
-    public RotatingPanel(int _x, int _y, int _w, int _h) {
-        super(_x, _y, _w, _h);
+    public RotatingPanel(int x, int y, int w, int h) {
+        super(x, y, w, h);
         degrees = 10;
         rotate = true;
     }

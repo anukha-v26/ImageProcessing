@@ -2,8 +2,9 @@ public class DisappearingPanel extends Panel {
     private boolean clicked = true;
 
     //constructor for class DisappearingPanel (using Panel class' constructor)
-    public DisappearingPanel(int _x, int _y, int _w, int _h) {
-        super(_x, _y, _w, _h);
+    public DisappearingPanel(int x, int y, int w, int h)
+    {
+        super(x, y, w, h);
     }
 
     //sets it up for image to be displayed initially and whenever else clicked is true (clicked = true initially)

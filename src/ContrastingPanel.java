@@ -2,8 +2,8 @@ import processing.core.PImage;
 public class ContrastingPanel extends Panel {
 
     //constructor for class ContrastingPanel (using Panel class' constructor)
-    public ContrastingPanel(int _x, int _y, int _w, int _h) {
-        super(_x, _y, _w, _h);
+    public ContrastingPanel(int x, int y, int w, int h) {
+        super(x, y, w, h);
     }
 
     //method that displays the image but it converts the color of the pixels to be black or white depending on brightness

@@ -7,11 +7,11 @@ public class Panel {
     private PImage img;
 
     //constructor for class Panel with 4 arguments of coordinates and dimensions of image
-    public Panel(int _x, int _y, int _w, int _h) {
-        x = _x;
-        y = _y;
-        w = _w;
-        h = _h;
+    public Panel(int x, int y, int w, int h) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
     }
 
     //method that is setting up the image
@@ -36,12 +36,12 @@ public class Panel {
         return y;
     }
 
-    public void setX(int _x) {
-        x = _x;
+    public void setX(int x) {
+        this.x = x;
     }
 
-    public void setY(int _y) {
-        y = _y;
+    public void setY(int y) {
+        this.y = y;
     }
 
     public int getWidth() {

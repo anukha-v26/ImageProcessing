@@ -27,7 +27,6 @@ public class Main extends PApplet {
     public void setup() {
         imageMode(CENTER);
         panels = new ArrayList<Panel>();
-        //panels = new Panel[NUM_PANELS_HORIZONTAL * NUM_PANELS_VERTICAL];
         int index = 0;
         int w = width / NUM_PANELS_HORIZONTAL;
         int h = height / NUM_PANELS_VERTICAL;
@@ -86,11 +85,11 @@ public class Main extends PApplet {
         updatePixels();
     }
 
-
     /*this method recognizes if 's' or 'r' are clicked on the keyboard.
     if s is pressed, the first and last element will switch.
     if r is pressed, a random element will be replaced with a ContrastingPanel object.
     */
+
     @Override
     public void keyPressed(){
         if (key == 's'){
