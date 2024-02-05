@@ -1,11 +1,11 @@
 import processing.core.PApplet;
-
+import java.util.ArrayList;
 public class Main extends PApplet {
 
     //Private constants and variables
     private final int NUM_PANELS_HORIZONTAL = 4;
     private final int NUM_PANELS_VERTICAL = 5;
-    private Panel[] panels;
+    private ArrayList<Panel> panels;
 
     //public variables
     public static Main app;
@@ -26,7 +26,8 @@ public class Main extends PApplet {
     //This is the setup method that creates a grid using nested for loops to place each strawberry image into the appropriate spot
     public void setup() {
         imageMode(CENTER);
-        panels = new Panel[NUM_PANELS_HORIZONTAL * NUM_PANELS_VERTICAL];
+        panels = new ArrayList<Panel>();
+        //panels = new Panel[NUM_PANELS_HORIZONTAL * NUM_PANELS_VERTICAL];
         int index = 0;
         int w = width / NUM_PANELS_HORIZONTAL;
         int h = height / NUM_PANELS_VERTICAL;
@@ -38,16 +39,16 @@ public class Main extends PApplet {
                 if (i % 5 == 0) {
                     p = new Panel(x, y, w, h);
                 } else if (i % 5 == 3) {
-                    p = new TintedPanel(x, y, w, h);
+                    p = new RotatingPanel(x, y, w, h);
                 } else if (i % 5 == 2) {
                     p = new ContrastingPanel(x, y, w, h);
                 } else if (i % 5 == 1) {
-                    p = new RotatingPanel(x, y, w, h);
-                } else {
                     p = new DisappearingPanel(x, y, w, h);
+                } else {
+                    p = new TintedPanel(x, y, w, h);
                 }
                 p.setupImage("data/strawberry.png");
-                panels[index] = p;
+                panels.add(index, p);
                 index++;
             }
         }
@@ -56,16 +57,15 @@ public class Main extends PApplet {
     //The draw method creates the striped background and then adds each strawberry (Panel p) to the display
     public void draw() {
         fancyBackground();
-        for (int row = 0; row < panels.length; row++) {
-            Panel p = panels[row];
+        for (Panel p : panels) {
             p.display();
         }
     }
 
+
     //This method recognizes that the mouse was clicked at the coordinates of the panel and passes it on to the subclasses for specific outcomes
     public void mouseClicked() {
-        for (int i = 0; i < panels.length; i++) {
-            Panel p = panels[i];
+        for (Panel p: panels) {
             p.handleMouseClicked(mouseX, mouseY);
         }
     }
@@ -84,5 +84,46 @@ public class Main extends PApplet {
             }
         }
         updatePixels();
+    }
+
+
+    /*this method recognizes if 's' or 'r' are clicked on the keyboard.
+    if s is pressed, the first and last element will switch.
+    if r is pressed, a random element will be replaced with a ContrastingPanel object.
+    */
+    @Override
+    public void keyPressed(){
+        if (key == 's'){
+            Panel first = panels.get(0);
+            Panel last = panels.get(panels.size()-1);
+            panels.set(panels.size()-1, first);
+            panels.set(0, last);
+            int firstX = first.getX();
+            int firstY = first.getY();
+            int lastX = last.getX();
+            int lastY = last.getY();
+            first.setX(lastX);
+            first.setY(lastY);
+            last.setX(firstX);
+            last.setY(firstY);
+        }
+        else if (key == 'r'){
+           int rand = (int)(Math.random() * (panels.size()));
+           Panel randPanel = panels.get(rand);
+           int randX = randPanel.getX();
+           int randY = randPanel.getY();
+           int randWidth = randPanel.getWidth();
+           int randHeight = randPanel.getHeight();
+           Panel newContrast = new ContrastingPanel(randX, randY, randWidth, randHeight);
+           Panel newPanel = new Panel(randX, randY, randWidth, randHeight);
+           if (randPanel instanceof ContrastingPanel){
+               newPanel.setupImage("data/strawberry.png");
+               panels.set(rand, newPanel);
+           }
+           else{
+               newContrast.setupImage("data/strawberry.png");
+               panels.set(rand, newContrast);
+           }
+        }
     }
 }
